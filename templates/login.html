@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if messages %}
+		<ul class="messages">
+	    	{% for message in messages %}
+	    		<li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+	    	{% endfor %}
+		</ul>
+	{% endif %}
+
+	<form method = "POST" >{% csrf_token %}
+
+    	<label>
+			Email:
+		 	<input type="text" name = "email"  placeholder="Enter your Email." />
+		</label><br><br>
+
+		<label>
+			Password:
+			 <input type="password" name = "password" placeholder="Password Please." /> <br><br>
+		</label>
+
+		<label>
+		<input type= "submit" value="LogIn" />
+		</label>
+
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+id,company_id,email,role
+0,client_a,person_00@mail.com,3
+1,client_b,person_01@mail.com,3
+2,client_a,person_02@mail.com,3
+3,client_b,person_03@mail.com,3
+4,client_a,person_04@mail.com,3
+5,client_b,person_05@mail.com,3
+6,client_a,person_06@mail.com,3
+7,,admin_01@mail.com,1
+8,client_a,client_a@mail.com,2
+9,client_b,client_b@mail.com,2
